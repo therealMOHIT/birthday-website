@@ -1,0 +1,20 @@
+{
+  "name": "birthday-website",
+  "version": "1.0.0",
+  "description": "An emotional and cinematic birthday celebration website",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "birthday",
+    "celebration",
+    "website",
+    "animated",
+    "emotional",
+    "cinematic"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
