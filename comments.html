@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments - Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎂 Birthday</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comments.html" class="active">Comments</a></li>
+                <li><a href="add-photos.html">Add Photos</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="songs.html">Songs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Comments Page -->
+    <div class="page-container">
+        <section class="comments-section">
+            <h1 class="page-title">💬 Comments & Wishes</h1>
+            <p class="page-subtitle">Leave your heartfelt messages below</p>
+
+            <!-- Add Comment Form -->
+            <div class="add-comment-card">
+                <h2>Add Your Comment</h2>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="commentName" 
+                            placeholder="Your Name" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <textarea 
+                            id="commentText" 
+                            placeholder="Write your message..." 
+                            rows="4" 
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Comment ❤️</button>
+                </form>
+            </div>
+
+            <!-- Comments Display -->
+            <div class="comments-container" id="commentsContainer">
+                <!-- Comments will be added here dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

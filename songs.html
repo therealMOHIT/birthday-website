@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs - Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎂 Birthday</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="add-photos.html">Add Photos</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="songs.html" class="active">Songs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Songs Page -->
+    <div class="page-container">
+        <section class="songs-section">
+            <h1 class="page-title">🎵 Birthday Playlist</h1>
+            <p class="page-subtitle">Music to celebrate with</p>
+
+            <!-- Add Song Form -->
+            <div class="add-song-card">
+                <h2>Add a Song</h2>
+                <form id="songForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="songTitle" 
+                            placeholder="Song Title" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="songArtist" 
+                            placeholder="Artist Name" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="url" 
+                            id="songUrl" 
+                            placeholder="Song URL (MP3 link)" 
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Song 🎶</button>
+                </form>
+            </div>
+
+            <!-- Songs Playlist -->
+            <div class="playlist-container" id="playlistContainer">
+                <!-- Songs will be displayed here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptySongs" class="empty-state">
+                <p>🎵 No songs yet</p>
+                <p>Add songs to create your birthday playlist!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

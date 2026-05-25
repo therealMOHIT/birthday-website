@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Photos - Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎂 Birthday</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="add-photos.html" class="active">Add Photos</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="songs.html">Songs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add Photos Page -->
+    <div class="page-container">
+        <section class="add-photos-section">
+            <h1 class="page-title">📸 Add Photos</h1>
+            <p class="page-subtitle">Share beautiful memories</p>
+
+            <!-- Upload Form -->
+            <div class="upload-card">
+                <h2>Upload Photos</h2>
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="photoUrl" class="upload-label">
+                            📷 Enter Photo URL or Use Photo Link
+                        </label>
+                        <input 
+                            type="url" 
+                            id="photoUrl" 
+                            placeholder="https://example.com/photo.jpg" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="photoCaption" 
+                            placeholder="Add a caption (optional)" 
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Photo ✨</button>
+                </form>
+            </div>
+
+            <!-- Photo Preview -->
+            <div class="photo-preview-card">
+                <h2>Preview</h2>
+                <div id="photoPreview" class="photo-preview">
+                    <p style="text-align: center; color: #999;">Photo preview will appear here</p>
+                </div>
+            </div>
+
+            <!-- Helpful Tips -->
+            <div class="tips-card">
+                <h2>💡 How to Get Photo URLs</h2>
+                <ul>
+                    <li>✅ Use <strong>Imgur</strong> - Upload and copy the image link</li>
+                    <li>✅ Use <strong>Google Drive</strong> - Share link as public, get direct URL</li>
+                    <li>✅ Use <strong>Cloudinary</strong> - Free image hosting</li>
+                    <li>✅ Use <strong>Unsplash/Pexels</strong> - Free stock photos</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

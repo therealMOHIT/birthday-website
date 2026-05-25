@@ -7,127 +7,58 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Particles -->
-    <div id="particles-container"></div>
-
-    <!-- Audio Background Music -->
-    <audio id="bgMusic" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="stars"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="typewriter">Happy Birthday!</span>
-            </h1>
-            <p class="hero-subtitle typewriter-subtitle">A special day for a special person</p>
-            <button class="music-toggle" id="musicToggle">🎵 Play Music</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎂 Birthday</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="add-photos.html">Add Photos</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="songs.html">Songs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Memory Timeline Section -->
-    <section id="timeline" class="timeline-section">
-        <h2 class="section-title">Our Beautiful Memories</h2>
-        <div class="timeline-container">
-            <div class="timeline-item left">
-                <div class="timeline-content">
-                    <h3>The Beginning</h3>
-                    <p>When our friendship started, everything changed for the better.</p>
-                    <span class="timeline-date">Day 1</span>
+    <!-- Home Page -->
+    <div class="page-container">
+        <section class="home-section">
+            <div class="floating-hearts"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Happy Birthday! 🎉</h1>
+                <p class="hero-subtitle">Celebrating You Today</p>
+                
+                <div class="birthday-message">
+                    <p>Today is your special day!</p>
+                    <p>A day to celebrate the wonderful person you are.</p>
+                    <p>Thank you for all the memories and laughter.</p>
+                    <p>Here's to another year of amazing moments! 💕</p>
+                </div>
+
+                <div class="quick-nav">
+                    <a href="comments.html" class="btn btn-primary">📝 View Comments</a>
+                    <a href="pictures.html" class="btn btn-secondary">📸 View Pictures</a>
+                    <a href="songs.html" class="btn btn-accent">🎵 Listen to Songs</a>
                 </div>
             </div>
 
-            <div class="timeline-item right">
-                <div class="timeline-content">
-                    <h3>Unforgettable Moments</h3>
-                    <p>Countless laughs, adventures, and memories that will last forever.</p>
-                    <span class="timeline-date">Every Day</span>
-                </div>
+            <div class="decorative-elements">
+                <div class="balloon balloon-1"></div>
+                <div class="balloon balloon-2"></div>
+                <div class="balloon balloon-3"></div>
+                <div class="confetti confetti-1"></div>
+                <div class="confetti confetti-2"></div>
+                <div class="confetti confetti-3"></div>
             </div>
-
-            <div class="timeline-item left">
-                <div class="timeline-content">
-                    <h3>Growing Together</h3>
-                    <p>Supporting each other through thick and thin, becoming stronger.</p>
-                    <span class="timeline-date">All These Years</span>
-                </div>
-            </div>
-
-            <div class="timeline-item right">
-                <div class="timeline-content">
-                    <h3>Today & Forever</h3>
-                    <p>Celebrating this special day and the incredible person you are.</p>
-                    <span class="timeline-date">Today</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photo Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <h2 class="section-title">Photo Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=400&fit=crop" alt="Memory 1">
-                <div class="gallery-overlay">Smile brighter</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=400&fit=crop" alt="Memory 2">
-                <div class="gallery-overlay">Shine always</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1535382519308-3f28dac5183a?w=400&h=400&fit=crop" alt="Memory 3">
-                <div class="gallery-overlay">Be awesome</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1513473783645-cd271d675d25?w=400&h=400&fit=crop" alt="Memory 4">
-                <div class="gallery-overlay">Keep smiling</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=400&h=400&fit=crop" alt="Memory 5">
-                <div class="gallery-overlay">Stay golden</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1516414447565-b2fcb029ab4f?w=400&h=400&fit=crop" alt="Memory 6">
-                <div class="gallery-overlay">Pure magic</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Surprise Section -->
-    <section id="surprise" class="surprise-section">
-        <h2 class="section-title">Got a surprise for you!</h2>
-        <div class="surprise-content">
-            <button class="surprise-btn" id="surpriseBtn">Click Me! 🎉</button>
-            <div id="surpriseBox" class="surprise-box hidden">
-                <div class="confetti-container" id="confetti"></div>
-                <p class="surprise-text">You deserve all the happiness in the world!</p>
-                <div class="cake-emoji">🎂🎈🎁</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Emotional Message Section -->
-    <section id="message" class="message-section">
-        <div class="message-content">
-            <h2 class="message-title">A Message From The Heart</h2>
-            <p class="message-text">
-                Today is your special day, and the world is brighter because you're in it. 
-                Your kindness, laughter, and amazing spirit make every moment special. 
-                Thank you for being the wonderful person you are. 
-                Here's to another year filled with love, joy, and endless possibilities.
-            </p>
-            <p class="message-closing">With all my love,<br>✨ Your Friend ✨</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Made with 💜 and lots of love</p>
-        <p>Happy Birthday! 🎂</p>
-    </footer>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

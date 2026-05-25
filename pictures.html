@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures - Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎂 Birthday</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="add-photos.html">Add Photos</a></li>
+                <li><a href="pictures.html" class="active">Pictures</a></li>
+                <li><a href="songs.html">Songs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pictures Page -->
+    <div class="page-container">
+        <section class="pictures-section">
+            <h1 class="page-title">📷 Photo Gallery</h1>
+            <p class="page-subtitle">Beautiful memories together</p>
+
+            <div class="gallery-container" id="galleryContainer">
+                <!-- Photos will be displayed here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyGallery" class="empty-state">
+                <p>🖼️ No photos yet</p>
+                <p>Head to "Add Photos" to share beautiful memories!</p>
+                <a href="add-photos.html" class="btn btn-primary">Add First Photo</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImage" src="" alt="">
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
